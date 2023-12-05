@@ -8,4 +8,5 @@ local Util = require("lazyvim.util")
 -- use `vim.keymap.set` instead
 local map = Util.safe_keymap_set
 
+map("n", "<leader>lg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 map("v", "<C-c>", '"+y', { noremap = true, silent = true })
