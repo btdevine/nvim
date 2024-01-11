@@ -10,3 +10,4 @@ local map = Util.safe_keymap_set
 
 map("n", "<leader>lg", ":Telescope live_grep<CR>", { noremap = true, silent = true })
 map("v", "<C-c>", '"+y', { noremap = true, silent = true })
+map("i", "'a", "'a")
