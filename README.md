@@ -4,7 +4,7 @@ I'm trying to make minimal changes to the default LazyVim config, so any changes
 
 ## 10/6/24
 
-- Ensure Prettier is used to format TS files (especially React files): added `/plugins/conform.lua`.
+- Ensure ESLint is used to format TS files (especially React files): added `/plugins/conform.lua`. For example, this enables imports to be auto-sorted.
 
 ## 10/4/24
 
