@@ -3,8 +3,8 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        ["typescript"] = { "eslint" },
-        ["typescriptreact"] = { "eslint" },
+        ["typescript"] = { "prettier" },
+        ["typescriptreact"] = { "prettier" },
       },
     },
   },
