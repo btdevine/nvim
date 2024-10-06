@@ -2,6 +2,10 @@
 
 I'm trying to make minimal changes to the default LazyVim config, so any changes made will be explained here.
 
+## 10/6/24
+
+- Ensure Prettier is used to format TS files (especially React files): added `/plugins/conform.lua`.
+
 ## 10/4/24
 
 - My root dir for grepping (and for Neotree as well, I believe) has been constantly changing for a while. Added to `config/options.lua` the following line, per [this Reddit thread](https://www.reddit.com/r/neovim/comments/1ajpdrx/comment/kpnjf9l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
