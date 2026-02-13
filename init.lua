@@ -1,3 +1,7 @@
+-- For yank/paste in Docker container
+vim.g.clipboard = "osc52"
+vim.opt.clipboard = "unnamedplus"
+
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
