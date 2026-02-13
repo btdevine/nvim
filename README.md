@@ -1,6 +1,17 @@
 # Changelog
 
+## 2/13/26
+
 I'm trying to make minimal changes to the default LazyVim config, so any changes made will be explained here.
+
+Added the following to init.lua:
+
+```lua
+-- For yank/paste in Docker container
+vim.g.clipboard = "osc52"
+vim.opt.clipboard = "unnamedplus"
+
+```
 
 ## 10/6/24
 
