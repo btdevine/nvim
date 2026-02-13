@@ -1,8 +1,8 @@
 # Changelog
 
-## 2/13/26
-
 I'm trying to make minimal changes to the default LazyVim config, so any changes made will be explained here.
+
+## 2/13/26
 
 Added the following to init.lua:
 
