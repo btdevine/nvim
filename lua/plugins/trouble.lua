@@ -1,5 +1,11 @@
 return {
   "folke/trouble.nvim",
   cmd = "Trouble",
-  opts = {},
+  opts = {
+    -- put the Trouble window on top of everything
+    win = {
+      position = "bottom",
+      size = 15,
+    },
+  },
 }
