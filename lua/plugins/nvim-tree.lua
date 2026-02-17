@@ -9,6 +9,10 @@ return {
   },
   config = function()
     require("nvim-tree").setup({
+      sync_root_with_cwd = true,
+      update_focused_file = {
+        enable = true,
+      },
       filters = {
         -- hide .files by default
         dotfiles = true,
