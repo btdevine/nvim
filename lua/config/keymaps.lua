@@ -1,3 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+vim.keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Vertical split" })
+vim.keymap.set("n", "<leader>wl", "<C-w>l", { desc = "Next window" })
+vim.keymap.set("n", "<leader>wh", "<C-w>h", { desc = "Previous window" })
