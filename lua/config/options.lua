@@ -11,6 +11,11 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 vim.opt.breakindentopt = { "shift:2", "min:20" }
 
--- Add line numbers, and relative line numbers
+-- Add line numbers, and relative line numbers.
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Show inline virtual text, e.g. Rust compilation errors.
+vim.diagnostic.config({
+  virtual_text = true,
+})
