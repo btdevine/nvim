@@ -13,6 +13,11 @@ return {
       update_focused_file = {
         enable = true,
       },
+      renderer = {
+        -- this was giving a pink underline to README.md, Cargo.toml, etc.
+        -- which I didn't like
+        special_files = {},
+      },
       filters = {
         -- hide .files by default
         dotfiles = true,
