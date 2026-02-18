@@ -11,6 +11,14 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 vim.opt.breakindentopt = { "shift:2", "min:20" }
 
+-- 8 lines above/below cursor
+vim.opt.scrolloff = 8
+-- 8 lines left/right of cursor
+vim.opt.sidescrolloff = 8
+
+-- Highlight current line
+vim.opt.cursorline = true
+
 -- Add line numbers, and relative line numbers.
 vim.opt.number = true
 vim.opt.relativenumber = true
