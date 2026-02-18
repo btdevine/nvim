@@ -10,4 +10,8 @@ return {
     { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
     { "<leader>/", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
   },
+  config = function()
+    require("telescope").setup()
+    require("telescope").load_extension("fzf")
+  end,
 }
