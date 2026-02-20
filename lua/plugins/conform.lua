@@ -2,7 +2,8 @@ return {
   "stevearc/conform.nvim",
   opts = {
     format_on_save = {
-      timeout_ms = 500,
+      -- Can take a while on large TS files, 500ms times out.
+      timeout_ms = 5000,
       lsp_format = "fallback",
     },
     formatters = {
