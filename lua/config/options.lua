@@ -23,6 +23,19 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- 4-space indentation globally, 2-space for TypeScript/JavaScript.
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
+  end,
+})
+
 -- Show inline virtual text, e.g. Rust compilation errors.
 vim.diagnostic.config({
   virtual_text = true,
