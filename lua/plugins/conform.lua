@@ -22,6 +22,7 @@ return {
       typescript = { "strip_unusual_line_terminators", "prettier" },
       typescriptreact = { "strip_unusual_line_terminators", "prettier" },
       rust = { "rustfmt" },
+      toml = { "taplo" },
     },
   },
 }
