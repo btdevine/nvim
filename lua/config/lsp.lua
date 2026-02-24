@@ -11,6 +11,15 @@ vim.lsp.enable("ts_ls")
 vim.lsp.config("rust_analyzer", {
   cmd = { mason_bin .. "/rust-analyzer" },
   filetypes = { "rust" },
+  settings = {
+    ["rust-analyzer"] = {
+      files = {
+        -- Use rust-analyzer's own file watcher instead of the LSP client's.
+        -- Fixes diagnostics not updating on save on macOS (unreliable FSEvents/kqueue).
+        watcher = "server",
+      },
+    },
+  },
 })
 vim.lsp.enable("rust_analyzer")
 
