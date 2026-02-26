@@ -8,6 +8,8 @@ vim.keymap.set("n", "<leader>wh", "<C-w>h", { desc = "Previous window" })
 -- Navigate by display lines when wrap is on
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
+vim.keymap.set("n", "0", "g0")
+vim.keymap.set("n", "$", "g$")
 
 -- Stay in visual mode after indenting
 vim.keymap.set("v", "<", "<gv")
