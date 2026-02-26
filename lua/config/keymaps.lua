@@ -10,6 +10,8 @@ vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
 vim.keymap.set("n", "0", "g0")
 vim.keymap.set("n", "$", "g$")
+vim.keymap.set("n", "00", "0")
+vim.keymap.set("n", "$$", "$")
 
 -- Stay in visual mode after indenting
 vim.keymap.set("v", "<", "<gv")
