@@ -11,6 +11,9 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 vim.opt.breakindentopt = { "shift:2", "min:20" }
 
+-- Faster key sequence timeout (for 00/$$ double-press mappings)
+vim.opt.timeoutlen = 300
+
 -- 8 lines above/below cursor
 vim.opt.scrolloff = 8
 -- 8 lines left/right of cursor
