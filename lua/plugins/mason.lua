@@ -12,6 +12,7 @@ return {
           "typescript-language-server",
           "prettier",
           "eslint-lsp",
+          "taplo",
         },
       },
     },
