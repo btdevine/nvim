@@ -23,6 +23,15 @@ vim.lsp.config("rust_analyzer", {
 })
 vim.lsp.enable("rust_analyzer")
 
+-- ESLint (config provided by nvim-lspconfig, override cmd for mason)
+vim.lsp.config("eslint", {
+  cmd = { mason_bin .. "/vscode-eslint-language-server", "--stdio" },
+  settings = {
+    format = false,
+  },
+})
+vim.lsp.enable("eslint")
+
 -- Prisma
 vim.lsp.config("prisma", {
   cmd = { mason_bin .. "/prisma-language-server", "--stdio" },
